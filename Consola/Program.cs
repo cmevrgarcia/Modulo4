@@ -113,10 +113,12 @@ namespace Consola
             //Ficha9Solucao.Exercicio1_3();
             
             Ficha9Solucao.Exercicio1_4();
+            //incomplete
 
             //Ficha9Solucao.Exercicio1_5();
 
-            //Ficha9Solucao.Exercicio1_6();
+            Ficha9Solucao.Exercicio1_6();
+            //incomplete
 
 
 

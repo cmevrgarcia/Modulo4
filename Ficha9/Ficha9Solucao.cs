@@ -123,21 +123,51 @@ namespace Ficha9
         {
             Console.WriteLine("Qual é o número?");
             var n = int.Parse(Console.ReadLine());
-            for (var i = 1; i<= n; i++)
+            var primos = "";
+            var isPrime = true;
+
+            for (int i = 2; i < n; i++)
+            {
+                if (n == 2)
+                {
+                    primos += n.ToString() + "; ";
+                }
+                else
+                {
+                    for (int j = 2; j < i; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                    if (isPrime == true)
+                    {
+                        primos += i.ToString() + "; ";
+                    }
+                }
+                isPrime = true;
+            }
+            Console.WriteLine(primos);
+
+            /*
+            for (var i = 2; i< n; i++)
             {
                 if ((i % 1 == 0) && (i % i == 0))
                 {
-                    for (var j = 1; j < n; j++)
+                    for (var j = 2; j < i; j++)
                     {
-                        if ((j % 1 != 0) && (j != 1))
+                        if ((i % j != 0) && (i != 1))
                         {
-                            Console.WriteLine(j);
+                            Console.WriteLine(i);
                         }
                     }
                 }
             }
+            */
         }
-        //.
+        
 
 
         #endregion
@@ -162,9 +192,28 @@ namespace Ficha9
 
         public static void Exercicio1_6()
         {
-            Console.WriteLine("Escolha um número entre 1 e 100");
-            var n = int.Parse(Console.ReadLine());
+            var min = 1;
+            var max = 100;
+            var half = 50;
+            var final = false;
+            Console.WriteLine("Pense num número entre " + min + " e " + max + ". É maior que " + half + "?");
+            var ans = Console.ReadLine();
+            while (final == false)
+            {
+                half = (min + max) / 2;
 
+                if (ans == "S")
+                {
+                    min = half;
+                    Console.WriteLine("É maior que " + half + "?");
+                }
+                else
+                {
+                    max = half;
+                    Console.WriteLine("É maior que " + half + "?");
+                }
+                final = true;
+            }
         }
 
 
