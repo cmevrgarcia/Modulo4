@@ -130,7 +130,7 @@ namespace Ficha9
             {
                 if (n == 2)
                 {
-                    primos += n.ToString() + "; ";
+                    primos += n.ToString() + "\n";
                 }
                 else
                 {
@@ -139,12 +139,11 @@ namespace Ficha9
                         if (i % j == 0)
                         {
                             isPrime = false;
-                            break;
                         }
                     }
                     if (isPrime == true)
                     {
-                        primos += i.ToString() + "; ";
+                        primos += i.ToString() + "\n";
                     }
                 }
                 isPrime = true;
@@ -196,23 +195,47 @@ namespace Ficha9
             var max = 100;
             var half = 50;
             var final = false;
-            Console.WriteLine("Pense num número entre " + min + " e " + max + ". É maior que " + half + "?");
-            var ans = Console.ReadLine();
+            Console.WriteLine("Pense num número entre " + min + " e " + max + ".");
+
             while (final == false)
             {
                 half = (min + max) / 2;
 
-                if (ans == "S")
+                if (half == (max - 1))
                 {
-                    min = half;
-                    Console.WriteLine("É maior que " + half + "?");
+                    Console.WriteLine("É " + half + "?");
+                    var ans = Console.ReadLine();
+                    if (ans == "S")
+                    {
+                        final = true;
+                    }
+                    else if (ans == "N")
+                    {
+                        Console.WriteLine("É " + (half + 1) + "?");
+                        ans = Console.ReadLine();
+                        if (ans == "S")
+                        {
+                            final = true;
+                        }
+                    }
                 }
                 else
                 {
-                    max = half;
                     Console.WriteLine("É maior que " + half + "?");
+                    var ans = Console.ReadLine();
+                    if (ans == "S")
+                    {
+                        min = half;
+                    }
+                    else if (ans == "N")
+                    {
+                        max = half;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Responda S ou N");
+                    }
                 }
-                final = true;
             }
         }
 

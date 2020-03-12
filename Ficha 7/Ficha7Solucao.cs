@@ -211,19 +211,20 @@ namespace Ficha_7
         public static void Exercicio1_8()
         {
             double tt = 0;
-            for (var i = 0; i < 5; i++)
+            string t = "";
+            for (var i = 1; i < 6; i++)
             {
-                Console.WriteLine("Qual é o nome do artigo?");
+                Console.WriteLine("Qual é o nome do "+ i + "º artigo?");
                 var n = Console.ReadLine();
-                Console.WriteLine("Qual é o valor do artigo?");
+                Console.WriteLine("Qual é o valor de " + n + "?");
                 var p = double.Parse(Console.ReadLine());
-                Console.WriteLine("Quantas unidades do artigo?");
+                Console.WriteLine("Quantas unidades de " + n + "?");
                 var q = double.Parse(Console.ReadLine());
-                var t = p * q;
-                Console.WriteLine(n + " - " + t + '\n');
-                tt = tt + t;
+                tt = tt + (p * q);
+                t+= n + " - " + Convert.ToString(p * q) + '\n';
             }
-            Console.WriteLine("-------" + '\n' +
+            Console.WriteLine(t);
+            Console.WriteLine("------------" + '\n' +
                               "Total - " + tt);
         }
 

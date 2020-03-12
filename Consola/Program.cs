@@ -2,6 +2,7 @@
 using Ficha_7;
 using Ficha8;
 using Ficha9;
+using Ficha13;
 using System;
 
 namespace Consola
@@ -112,19 +113,25 @@ namespace Consola
 
             //Ficha9Solucao.Exercicio1_3();
             
-            Ficha9Solucao.Exercicio1_4();
-            //incomplete
+            //Ficha9Solucao.Exercicio1_4();
 
             //Ficha9Solucao.Exercicio1_5();
 
-            Ficha9Solucao.Exercicio1_6();
-            //incomplete
+            //Ficha9Solucao.Exercicio1_6();
+
+
+
+
+            //Ficha13Solucao.Exercicio1();
+
 
 
 
 
 
             #region Oldstuff
+            //testes e exemplos
+
 
             //Console.WriteLine("Hello World!");
 
@@ -153,6 +160,22 @@ namespace Consola
             //Console.WriteLine("For a + b * c > Enter c");
             //var c = int.Parse(Console.ReadLine());
 
+            //ref
+            //in
+            //out
+
+            //public static int Pascaleira(int num1, int num2, out int soma, out int subtraçao, out int multiplicaçao, out int divisao, out int resto)
+            //{
+            //    soma = num1 + num2;
+            //    subtraçao = num1 - num2;
+            //    multiplicaçao = num1 * num2;
+            //    divisao = num1 / num2;
+            //    resto = num1 & num2;
+            //}
+
+            //var resto = Pascaleira(4, 2, out int soma, out int subtraçao, out int multiplicaçao, out int divisao,out int resto);
+            //Console.WriteLine($"A soma de 4 e 2 é (soma) \nA subtração de 4 e 2 é (subtraçao) \nA multiplicação de 4 por 2 é (multiplicaçao) \nA divisão de 4 por 2 é (divisao) \nO resto de 4 por 2 é (resto)");
+
             #endregion
 
             #region IcaCE
@@ -174,6 +197,8 @@ namespace Consola
         }
 
         #region Oldstuff+
+        //testes e exemplos
+
         //static void OlaNome(string nome)
         //{
         //    Console.WriteLine("Olá " + nome);
