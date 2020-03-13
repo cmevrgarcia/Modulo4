@@ -187,7 +187,90 @@ namespace Ficha9
 
         #endregion
 
-        #region Ex1.6
+        #region Ex6
+
+        public static void Exercicio6()
+        {
+
+        }
+
+
+
+        #endregion
+
+        #region Ex7
+
+
+
+
+
+        #endregion
+
+        #region Ex8
+
+
+
+
+
+        #endregion
+
+        #region Ex9
+
+
+
+
+
+        #endregion
+
+        #region Ex10
+
+
+
+
+
+        #endregion
+
+        #region Ex11
+
+
+
+
+
+        #endregion
+
+        #region Ex12
+
+
+
+
+
+        #endregion
+
+        #region Ex13
+
+
+
+
+
+        #endregion
+
+        #region Ex14
+
+
+
+
+
+        #endregion
+
+        #region Ex15
+
+
+
+
+
+        #endregion
+
+        #region Old Ex1.6
 
         public static void Exercicio1_6()
         {

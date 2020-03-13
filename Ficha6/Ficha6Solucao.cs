@@ -173,11 +173,11 @@ namespace Ficha6
 
         public static void Exercicio5b()
         {
-            Console.WriteLine("Para (a + b) % c > Qual é o valor de a?");
+            Console.WriteLine("Para - a + (b * c) > Qual é o valor de a?");
             var a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Para (a + b) % c > Qual é o valor de b?");
+            Console.WriteLine("Para - a + (b * c) > Qual é o valor de b?");
             var b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Para (a + b) % c > Qual é o valor de c?");
+            Console.WriteLine("Para - a + (b * c) > Qual é o valor de c?");
             var c = int.Parse(Console.ReadLine());
             Op2(a, b, c);
 
@@ -185,11 +185,29 @@ namespace Ficha6
 
         public static void Op2(int a, int b, int c)
         {
-            Console.WriteLine("Resultado = " + ((a + b) % c) + '\n');
+            Console.WriteLine("Resultado = " + (- a + (b * c)) + '\n');
         }
 
 
         public static void Exercicio5c()
+        {
+            Console.WriteLine("Para (a + b) % c > Qual é o valor de a?");
+            var a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Para (a + b) % c > Qual é o valor de b?");
+            var b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Para (a + b) % c > Qual é o valor de c?");
+            var c = int.Parse(Console.ReadLine());
+            Op3(a, b, c);
+
+        }
+
+        public static void Op3(int a, int b, int c)
+        {
+            Console.WriteLine("Resultado = " + ((a + b) % c) + '\n');
+        }
+
+
+        public static void Exercicio5d()
         {
             Console.WriteLine("Para a + ((b * c) / d) > Qual é o valor de a?");
             var a = int.Parse(Console.ReadLine());
@@ -199,17 +217,17 @@ namespace Ficha6
             var c = int.Parse(Console.ReadLine());
             Console.WriteLine("Para a + ((b * c) / d) > Qual é o valor de d?");
             var d = int.Parse(Console.ReadLine());
-            Op3(a, b, c, d);
+            Op4(a, b, c, d);
 
         }
 
-        public static void Op3(int a, int b, int c, int d)
+        public static void Op4(int a, int b, int c, int d)
         {
             Console.WriteLine("Resultado = " + (a + ((b * c) / d)) + '\n');
         }
 
 
-        public static void Exercicio5d()
+        public static void Exercicio5e()
         {
             Console.WriteLine("Para a + ((b / c) * d) - (e % f) > Qual é o valor de a?");
             var a = int.Parse(Console.ReadLine());
@@ -223,11 +241,11 @@ namespace Ficha6
             var e = int.Parse(Console.ReadLine());
             Console.WriteLine("Para a + ((b / c) * d) - (e % f) > Qual é o valor de f?");
             var f = int.Parse(Console.ReadLine());
-            Op4(a, b, c, d, e, f);
+            Op5(a, b, c, d, e, f);
 
         }
 
-        public static void Op4(int a, int b, int c, int d, int e, int f)
+        public static void Op5(int a, int b, int c, int d, int e, int f)
         {
             Console.WriteLine("Resultado = " + (a + ((b / c) * d) - (e % f)));
         }
